@@ -237,7 +237,7 @@ a {
 .herbergements-card .card {
     width: fit-content;
     height: fit-content;
-    padding: 0 0 15px O;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,8 +247,29 @@ a {
 .herbergements-card .card img {
     border-radius: 20px 20px 0 0;
     height: 124px;
-    width: 100%;
-    border: 5px solid #FFFFFF ;
+    width: 250.33px;
+    /* border: 5px solid #FFFFFF ; */
+}
+
+.card-content {
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-subtitle {
+    margin: 0;
 }
 
 
