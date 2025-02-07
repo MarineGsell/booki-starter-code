@@ -220,6 +220,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -231,7 +232,24 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    /* width: 65%; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hebergements .afficher-plus {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.herbergements-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .herbergements-card .card {
