@@ -136,6 +136,8 @@ a {
     font-weight: 700;
     text-align: center;
     border: 1px solid var(--main-bg-color);
+    outline: solid var(--main-bg-color);
+
 }
 
 .pin {
@@ -336,7 +338,62 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.act-group {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.act-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.act-card .card {
+    border-radius: 20px;
+    padding: 0;
+}
+
+.act-card .card img {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.act-card .card .card-title {
+    padding: 20px 19px 20px 19px;
+}
+
+
+
+/**********Footer**********/
+.footer {
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-group p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
