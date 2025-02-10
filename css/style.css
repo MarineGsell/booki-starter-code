@@ -87,12 +87,9 @@ a {
 .header img {
     height: 19px;
     width: auto;
-    padding: 30px auto;
-
 }
 
 .menu {
-    padding: auto 50px;
     display: flex;
     flex-direction: row;
     gap: 68px;
