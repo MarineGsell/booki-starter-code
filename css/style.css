@@ -180,7 +180,11 @@ a {
 
 .filtres {
     display: flex;
-    flex-direction: row;
+    gap: 15px;
+}
+
+.ligne-filtres {
+    display: flex;
     gap: 15px;
 }
 
@@ -269,7 +273,6 @@ a {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    width: 100%;
 }
 
 .herbergements-card .card {
@@ -364,7 +367,6 @@ a {
 
 .act-card {
     display: flex;
-    flex-direction: row;
     gap: 30px;
 }
 
@@ -416,6 +418,13 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+   
+    .filter-bar {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }   
+   
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
@@ -479,7 +488,6 @@ a {
     .lien-menu{
         padding-bottom: 15px;
         height: fit-content;
-
     }
 
     .lien-menu:hover {
@@ -513,20 +521,20 @@ a {
         padding: 0 20px;
     }
 
+    .filtres {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
     .filter-bar {
        flex-direction: column; 
        gap: 20px;
        align-items: start;
     }
 
-    .filter-title {
-        text-align: left;
-    }
-
-    .filtres {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+    .filtre {
+        width: 100%;
     }
 
     /* hebergements and populaires */
@@ -563,7 +571,6 @@ a {
     }
 
     .herbergements-card {
-        /* grid-template-columns: repeat(1, 1fr); */
         gap: 15px;
     }
 
@@ -579,7 +586,6 @@ a {
     /* activites */
 
     .act-card {
-        display: flex;
         flex-direction: column;
         gap: 15px;
     }
@@ -591,7 +597,6 @@ a {
     /* footer */
 
     .footer {
-        display: flex;
         flex-direction: column;
         gap: 50px;
         padding: 30px;
