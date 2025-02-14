@@ -93,10 +93,10 @@ a {
     display: flex;
     flex-direction: row;
     gap: 68px;
+    height: 79px;
 }
 
 .lien-menu {
-    height: 79px;
     display: flex;
     align-items: center;
 }
@@ -260,10 +260,16 @@ a {
 }
 
 .herbergements-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 30px;
+}
+
+.ligne-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
 }
 
 .herbergements-card .card {
@@ -273,6 +279,7 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
+    width: 100%;
 }
 
 .herbergements-card .card img {
@@ -301,7 +308,6 @@ a {
 .card-subtitle {
     margin: 0;
 }
-
 
 /****** Populaires ***********/
 .populaires {
@@ -357,14 +363,15 @@ a {
 }
 
 .act-card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 30px;
 }
 
 .act-card .card {
     border-radius: 20px;
     padding: 0;
+    width: 100%;
 }
 
 .act-card .card img {
@@ -377,13 +384,10 @@ a {
     padding: 20px 19px 20px 19px;
 }
 
-
-
 /**********Footer**********/
 .footer {
     background-color: var(--main-bg-color);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
 }
 
 .footer-group {
@@ -391,6 +395,7 @@ a {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
+    width: 100%;
 }
 
 .subtitle {
@@ -558,8 +563,17 @@ a {
     }
 
     .herbergements-card {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
         gap: 15px;
+    }
+
+    .ligne-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .herbergements-card .card {
+        width: auto;
     }
 
     /* activites */
