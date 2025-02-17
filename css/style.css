@@ -197,6 +197,7 @@ a {
 
 .filtre {
     box-sizing: border-box;
+    background: none;
     display: flex;
     flex-direction: row;
     height: 50px;
@@ -206,16 +207,13 @@ a {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .filtre:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
-}
-
-.filtre p {
-    font-size: 17px;
-    font-weight: 700;
 }
 
 .info-bar {
@@ -358,31 +356,31 @@ a {
 }
 
 /****** Activités ***********/
-.act-group {
+.activite-group {
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.act-card {
+.activite-card {
     display: flex;
     gap: 30px;
 }
 
-.act-card .card {
+.activite-card .card {
     border-radius: 20px;
     padding: 0;
     width: 100%;
 }
 
-.act-card .card img {
+.activite-card .card img {
     height: 380px;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.act-card .card .card-title {
+.activite-card .card .card-title {
     padding: 20px 19px 20px 19px;
 }
 
@@ -417,7 +415,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
    
     .filter-bar {
         flex-direction: column;
@@ -456,7 +454,7 @@ a {
         font-size: 13px;
     }
 
-    .act-card .card img {
+    .activite-card .card img {
         height: 200px;
     }
 }
@@ -483,11 +481,16 @@ a {
     .menu {
         padding: 0;
         justify-content: space-between;
+        width: 100%;
+        gap: 0;
     }
 
     .lien-menu{
         padding-bottom: 15px;
         height: fit-content;
+        width: 100%;
+        justify-content: center;
+        border-bottom: 2px solid var(--main-bg-color);
     }
 
     .lien-menu:hover {
@@ -527,12 +530,6 @@ a {
         width: 100%;
     }
 
-    .filter-bar {
-       flex-direction: column; 
-       gap: 20px;
-       align-items: start;
-    }
-
     .filtre {
         width: 100%;
     }
@@ -551,10 +548,6 @@ a {
 
     /* populaires */
 
-    .populaires {
-        width: 100%;
-    }
-
     .populaires section {
         background-color: var(--main-bg-color);
 
@@ -564,10 +557,6 @@ a {
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
-    }
-
-    .hebergements {
-        width: 100%;
     }
 
     .herbergements-card {
@@ -585,12 +574,12 @@ a {
 
     /* activites */
 
-    .act-card {
+    .activite-card {
         flex-direction: column;
         gap: 15px;
     }
 
-    .act-card .card img {
+    .activite-card .card img {
         height: 141px;
     }
 
