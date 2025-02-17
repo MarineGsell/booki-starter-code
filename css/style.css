@@ -548,9 +548,12 @@ a {
 
     /* populaires */
 
-    .populaires section {
-        background-color: var(--main-bg-color);
+    .populaires-cards {
+        flex-direction: column;
+    }
 
+    .populaires-cards a {
+        width: 100%;
     }
 
     /* hebergements */
